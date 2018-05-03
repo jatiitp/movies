@@ -1,0 +1,29 @@
+<div id="snackbar">{{snackHead}}</div>
+<div class="" >
+	<div class="lib-head">Movies in my Library</div>
+  	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-upload">
+  			    <div class="table-responsive">
+	      <table id="myTable" class="table">
+	        <thead>
+	          <tr>
+	          	<th>Sr. No.</th>
+	            <th>Movie Name</th>
+	            <th>Actions</th>
+	          </tr>
+	        </thead>
+
+	        <tbody>
+	          <tr ng-repeat="item in employeeList track by $index">
+	            <td>{{$index + 1}}</td>
+	            <td>{{item.data.movieName}}</td>
+	            <td>
+	               <div class="edit-delete">
+	                    <div class="btn " ng-click="delete($index)">Delete</div>
+	                </div>
+	            </td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+</div>
